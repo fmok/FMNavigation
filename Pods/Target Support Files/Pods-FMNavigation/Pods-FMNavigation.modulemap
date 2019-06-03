@@ -1,0 +1,6 @@
+framework module Pods_FMNavigation {
+  umbrella header "Pods-FMNavigation-umbrella.h"
+
+  export *
+  module * { export * }
+}

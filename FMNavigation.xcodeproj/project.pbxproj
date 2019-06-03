@@ -3,29 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		57922FF322A4C5C200DB73EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57922FF222A4C5C200DB73EA /* AppDelegate.m */; };
-		57922FF622A4C5C200DB73EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57922FF522A4C5C200DB73EA /* ViewController.m */; };
-		57922FF922A4C5C200DB73EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57922FF722A4C5C200DB73EA /* Main.storyboard */; };
 		57922FFB22A4C5C300DB73EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57922FFA22A4C5C300DB73EA /* Assets.xcassets */; };
 		57922FFE22A4C5C300DB73EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57922FFC22A4C5C300DB73EA /* LaunchScreen.storyboard */; };
 		5792300122A4C5C300DB73EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5792300022A4C5C300DB73EA /* main.m */; };
+		5792300C22A4C63400DB73EA /* FMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5792300822A4C63400DB73EA /* FMBaseViewController.m */; };
+		5792300D22A4C63400DB73EA /* FMCustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5792300922A4C63400DB73EA /* FMCustomNavBar.m */; };
+		5792301122A4C7F600DB73EA /* FMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5792300F22A4C7F600DB73EA /* FMUtility.m */; };
+		5792301922A4CA3E00DB73EA /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5792301822A4CA3E00DB73EA /* TestViewController.m */; };
+		5792301D22A4CB1D00DB73EA /* FM_Back_Btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5792301B22A4CB1D00DB73EA /* FM_Back_Btn@3x.png */; };
+		5792301E22A4CB1D00DB73EA /* FM_Back_Btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5792301C22A4CB1D00DB73EA /* FM_Back_Btn@2x.png */; };
+		B1A3EFE6A2898B8830528707 /* Pods_FMNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2089E5848502A17AFD1BFC0D /* Pods_FMNavigation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2089E5848502A17AFD1BFC0D /* Pods_FMNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57922FEE22A4C5C200DB73EA /* FMNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57922FF122A4C5C200DB73EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		57922FF222A4C5C200DB73EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		57922FF422A4C5C200DB73EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		57922FF522A4C5C200DB73EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		57922FF822A4C5C200DB73EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57922FFA22A4C5C300DB73EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57922FFD22A4C5C300DB73EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57922FFF22A4C5C300DB73EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5792300022A4C5C300DB73EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5792300822A4C63400DB73EA /* FMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMBaseViewController.m; sourceTree = "<group>"; };
+		5792300922A4C63400DB73EA /* FMCustomNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCustomNavBar.m; sourceTree = "<group>"; };
+		5792300A22A4C63400DB73EA /* FMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMBaseViewController.h; sourceTree = "<group>"; };
+		5792300B22A4C63400DB73EA /* FMCustomNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCustomNavBar.h; sourceTree = "<group>"; };
+		5792300F22A4C7F600DB73EA /* FMUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUtility.m; sourceTree = "<group>"; };
+		5792301022A4C7F600DB73EA /* FMUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUtility.h; sourceTree = "<group>"; };
+		5792301322A4C82300DB73EA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5792301722A4CA3E00DB73EA /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		5792301822A4CA3E00DB73EA /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		5792301B22A4CB1D00DB73EA /* FM_Back_Btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FM_Back_Btn@3x.png"; sourceTree = "<group>"; };
+		5792301C22A4CB1D00DB73EA /* FM_Back_Btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FM_Back_Btn@2x.png"; sourceTree = "<group>"; };
+		7354E6EE8A7CDA9AD986C3B0 /* Pods-FMNavigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMNavigation.release.xcconfig"; path = "Target Support Files/Pods-FMNavigation/Pods-FMNavigation.release.xcconfig"; sourceTree = "<group>"; };
+		C4C5DCF3DD8E0528C5B739BD /* Pods-FMNavigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMNavigation.debug.xcconfig"; path = "Target Support Files/Pods-FMNavigation/Pods-FMNavigation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A3EFE6A2898B8830528707 /* Pods_FMNavigation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				57922FF022A4C5C200DB73EA /* FMNavigation */,
 				57922FEF22A4C5C200DB73EA /* Products */,
+				590FCC118D984125CF6129A4 /* Pods */,
+				650B703D543171969E0ED713 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +77,90 @@
 		57922FF022A4C5C200DB73EA /* FMNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				5792300E22A4C7D500DB73EA /* Tools */,
+				5792300722A4C63400DB73EA /* Navigation */,
+				5792301422A4CA0B00DB73EA /* Class */,
+				5792301A22A4CB1D00DB73EA /* Rescourse */,
 				57922FF122A4C5C200DB73EA /* AppDelegate.h */,
 				57922FF222A4C5C200DB73EA /* AppDelegate.m */,
-				57922FF422A4C5C200DB73EA /* ViewController.h */,
-				57922FF522A4C5C200DB73EA /* ViewController.m */,
-				57922FF722A4C5C200DB73EA /* Main.storyboard */,
 				57922FFA22A4C5C300DB73EA /* Assets.xcassets */,
 				57922FFC22A4C5C300DB73EA /* LaunchScreen.storyboard */,
 				57922FFF22A4C5C300DB73EA /* Info.plist */,
 				5792300022A4C5C300DB73EA /* main.m */,
 			);
 			path = FMNavigation;
+			sourceTree = "<group>";
+		};
+		5792300722A4C63400DB73EA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				5792300A22A4C63400DB73EA /* FMBaseViewController.h */,
+				5792300822A4C63400DB73EA /* FMBaseViewController.m */,
+				5792300B22A4C63400DB73EA /* FMCustomNavBar.h */,
+				5792300922A4C63400DB73EA /* FMCustomNavBar.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		5792300E22A4C7D500DB73EA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5792301322A4C82300DB73EA /* PrefixHeader.pch */,
+				5792301022A4C7F600DB73EA /* FMUtility.h */,
+				5792300F22A4C7F600DB73EA /* FMUtility.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5792301422A4CA0B00DB73EA /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5792301522A4CA1500DB73EA /* TestModule */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5792301522A4CA1500DB73EA /* TestModule */ = {
+			isa = PBXGroup;
+			children = (
+				5792301622A4CA2400DB73EA /* Controlller */,
+			);
+			path = TestModule;
+			sourceTree = "<group>";
+		};
+		5792301622A4CA2400DB73EA /* Controlller */ = {
+			isa = PBXGroup;
+			children = (
+				5792301722A4CA3E00DB73EA /* TestViewController.h */,
+				5792301822A4CA3E00DB73EA /* TestViewController.m */,
+			);
+			path = Controlller;
+			sourceTree = "<group>";
+		};
+		5792301A22A4CB1D00DB73EA /* Rescourse */ = {
+			isa = PBXGroup;
+			children = (
+				5792301C22A4CB1D00DB73EA /* FM_Back_Btn@2x.png */,
+				5792301B22A4CB1D00DB73EA /* FM_Back_Btn@3x.png */,
+			);
+			path = Rescourse;
+			sourceTree = "<group>";
+		};
+		590FCC118D984125CF6129A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4C5DCF3DD8E0528C5B739BD /* Pods-FMNavigation.debug.xcconfig */,
+				7354E6EE8A7CDA9AD986C3B0 /* Pods-FMNavigation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		650B703D543171969E0ED713 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2089E5848502A17AFD1BFC0D /* Pods_FMNavigation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5792300422A4C5C300DB73EA /* Build configuration list for PBXNativeTarget "FMNavigation" */;
 			buildPhases = (
+				ADC1F083CA20F4A9F7FA4120 /* [CP] Check Pods Manifest.lock */,
 				57922FEA22A4C5C200DB73EA /* Sources */,
 				57922FEB22A4C5C200DB73EA /* Frameworks */,
 				57922FEC22A4C5C200DB73EA /* Resources */,
+				ABE8C5528FEDBD7013AAC584 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,34 +224,72 @@
 			files = (
 				57922FFE22A4C5C300DB73EA /* LaunchScreen.storyboard in Resources */,
 				57922FFB22A4C5C300DB73EA /* Assets.xcassets in Resources */,
-				57922FF922A4C5C200DB73EA /* Main.storyboard in Resources */,
+				5792301D22A4CB1D00DB73EA /* FM_Back_Btn@3x.png in Resources */,
+				5792301E22A4CB1D00DB73EA /* FM_Back_Btn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABE8C5528FEDBD7013AAC584 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FMNavigation/Pods-FMNavigation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FMNavigation/Pods-FMNavigation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FMNavigation/Pods-FMNavigation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC1F083CA20F4A9F7FA4120 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMNavigation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57922FEA22A4C5C200DB73EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57922FF622A4C5C200DB73EA /* ViewController.m in Sources */,
+				5792301922A4CA3E00DB73EA /* TestViewController.m in Sources */,
+				5792300D22A4C63400DB73EA /* FMCustomNavBar.m in Sources */,
 				5792300122A4C5C300DB73EA /* main.m in Sources */,
+				5792300C22A4C63400DB73EA /* FMBaseViewController.m in Sources */,
 				57922FF322A4C5C200DB73EA /* AppDelegate.m in Sources */,
+				5792301122A4C7F600DB73EA /* FMUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		57922FF722A4C5C200DB73EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57922FF822A4C5C200DB73EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		57922FFC22A4C5C300DB73EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,35 +415,41 @@
 		};
 		5792300522A4C5C300DB73EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C5DCF3DD8E0528C5B739BD /* Pods-FMNavigation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Q57U4NZX7;
+				GCC_PREFIX_HEADER = FMNavigation/Tools/PrefixHeader.pch;
 				INFOPLIST_FILE = FMNavigation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wjy.FMNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5792300622A4C5C300DB73EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7354E6EE8A7CDA9AD986C3B0 /* Pods-FMNavigation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Q57U4NZX7;
+				GCC_PREFIX_HEADER = FMNavigation/Tools/PrefixHeader.pch;
 				INFOPLIST_FILE = FMNavigation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wjy.FMNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

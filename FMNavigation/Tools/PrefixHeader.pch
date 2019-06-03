@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  FMNavigation
+//
+//  Created by wjy on 2019/6/3.
+//  Copyright © 2019 wjy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "FMUtility.h"
+//
+#define IS_IPHONEX                          [FMUtility isIPhoneXSeries]
+// color
+#define SRGBCOLOR(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define SRGBCOLOR_HEX(hex) SRGBCOLOR(((hex & 0xFF0000 )>>16), ((hex & 0x00FF00 )>>8), (hex & 0x0000FF))
+//
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+// nav
+#define kNavStatusBarHeight ((IS_IPHONEX) ? (44.f) : (20.f))
+#define kNavBarHeight 44.f
+#define kNavBarAndStateHeight  (kNavBarHeight + kNavStatusBarHeight)
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
