@@ -174,7 +174,6 @@
 				57922FEA22A4C5C200DB73EA /* Sources */,
 				57922FEB22A4C5C200DB73EA /* Frameworks */,
 				57922FEC22A4C5C200DB73EA /* Resources */,
-				ABE8C5528FEDBD7013AAC584 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,23 +231,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		ABE8C5528FEDBD7013AAC584 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FMNavigation/Pods-FMNavigation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FMNavigation/Pods-FMNavigation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FMNavigation/Pods-FMNavigation-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		ADC1F083CA20F4A9F7FA4120 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
