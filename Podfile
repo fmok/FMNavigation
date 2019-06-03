@@ -7,6 +7,7 @@ target 'FMNavigation' do
   inhibit_all_warnings!
 
   pod 'Masonry'
+  pod 'YTKNetwork'
 
   # Pods for FMNavigation
 
