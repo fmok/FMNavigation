@@ -19,4 +19,9 @@
  */
 - (void)setUpNav;
 
+/**
+ 退出方式，子类可重写
+ */
+- (void)popVC;
+
 @end

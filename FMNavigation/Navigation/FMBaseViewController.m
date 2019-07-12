@@ -90,7 +90,7 @@
     WS(weakSelf);
     // back btn
     [self.customNavBar configureLeftItem:self.backBtn action:^{
-        [weakSelf.navigationController popViewControllerAnimated:YES];
+        [weakSelf popVC];
     }];
     // title lab
     self.titleLab.text = self.title;
@@ -98,9 +98,13 @@
 }
 
 #pragma mark - Events
-- (void)PopVC
+- (void)popVC
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    if (self.navigationController) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 #pragma mark - Override methods
@@ -122,7 +126,7 @@
 {
     if (!_backBtn) {
         _backBtn = [[UIButton alloc] initWithFrame:CGRectZero];
-        [_backBtn setImage:[UIImage imageNamed:@"FM_Back_Btn"] forState:UIControlStateNormal];
+        [_backBtn setImage:[UIImage imageNamed:@"CGT_Back_Btn"] forState:UIControlStateNormal];
     }
     return _backBtn;
 }
@@ -133,6 +137,7 @@
         _titleLab = [[UILabel alloc] initWithFrame:CGRectZero];
         _titleLab.textColor = SRGBCOLOR_HEX(0x222222);
         _titleLab.font = [UIFont systemFontOfSize:18.f];
+        _titleLab.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLab;
 }

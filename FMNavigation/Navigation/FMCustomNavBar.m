@@ -48,6 +48,7 @@
 {
     if (_leftItem) {
         [_leftItem removeFromSuperview];
+        _leftItem = nil;
         leftAction = nil;
     }
     if (item) {
@@ -82,12 +83,14 @@
         [self.leftBlank addGestureRecognizer:tap];
         [self.leftItem addGestureRecognizer:tap];
     }
+    [self fixItemsConstraints];
 }
 
 - (void)configureMiddleItem:(UIView *)item
 {
     if (_middleItem) {
         [_middleItem removeFromSuperview];
+        _middleItem = nil;
     }
     self.middleItem = item;
     [self addSubview:self.middleItem];
@@ -95,16 +98,22 @@
         make.top.mas_equalTo(self).offset(kNavStatusBarHeight);
         make.centerX.mas_equalTo(self);
         make.height.mas_equalTo(kNavBarHeight);
-        if (item.frame.size.width > 0) {
-            make.width.mas_lessThanOrEqualTo(item.frame.size.width);
+        if (_leftItem) {
+            make.left.mas_equalTo(self.leftItem.mas_right);
+        } else {
+            if (item.frame.size.width > 0) {
+                make.width.mas_lessThanOrEqualTo(item.frame.size.width);
+            }
         }
     }];
+    [self fixItemsConstraints];
 }
 
 - (void)configureRightItem:(UIControl *)item action:(TargetAction)action
 {
     if (_rightItem) {
         [_rightItem removeFromSuperview];
+        _rightItem = nil;
         rightAction = nil;
     }
     if (item) {
@@ -124,8 +133,9 @@
         [self addSubview:self.rightItem];
         [self.rightItem mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self).offset(kNavStatusBarHeight);
+            make.bottom.mas_equalTo(self);
             make.right.mas_equalTo(self.rightBlank.mas_left).offset(0.f);
-            make.size.mas_equalTo(CGSizeMake(CGRectGetWidth(item.frame), CGRectGetHeight(item.frame)));
+            make.width.mas_equalTo(44.f);
         }];
     }
     if (action && [item isKindOfClass:[UIControl class]]) {
@@ -137,17 +147,34 @@
         [self.rightBlank addGestureRecognizer:tap];
         [self.rightBlank addGestureRecognizer:tap];
     }
+    [self fixItemsConstraints];
+}
+
+#pragma mark - Private methods
+- (void)fixItemsConstraints
+{
+    if (_leftItem && _middleItem) {
+        [_leftItem setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+        [_leftItem setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+        [_middleItem mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(_leftItem.mas_right);
+        }];
+    }
 }
 
 #pragma mark - Events
 - (void)selLeftAction
 {
-    leftAction();
+    if (leftAction) {
+        leftAction();
+    }
 }
 
 - (void)selRightAction
 {
-    rightAction();
+    if (rightAction) {
+        rightAction();
+    }
 }
 
 #pragma mark - setter
@@ -163,6 +190,7 @@
     if (_middleItem && [_middleItem isKindOfClass:[UILabel class]]) {
         ((UILabel *)_middleItem).text = navTitle;
     }
+    [self fixItemsConstraints];
 }
 
 - (void)setNavMiddleTitleColor:(UIColor *)navMiddleTitleColor
